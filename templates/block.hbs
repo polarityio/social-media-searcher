@@ -1,0 +1,37 @@
+{{#if details.items}}
+    <h1 class="p-title">
+        
+        {{#if (gt details.searchInformation.totalResults 5) }}
+        {{fa-icon "eye" fixedWidth=true}}
+        Results limited to first 5 exploits found 
+        {{/if}}
+    </h1>
+    {{#each details.items as |result index|}}
+      {{#if (gt index 0)}}
+        <hr>
+      {{/if}}
+        <h1 class="p-title">
+          Result #{{inc index}}
+        </h1>
+
+        {{#if result.title}}
+          <div>
+            <a href="{{result.link}}" class="p-link">{{result.title}}</a>
+          </div>
+        {{/if}}
+
+        {{#if result.displayLink}}
+          <div>
+            <span class="p-key">Result Site:</span>
+            <span class="p-value">{{result.displayLink}}</span>
+          </div>
+        {{/if}}
+
+        {{#if result.snippet}}
+          <div>
+            <div class="p-block">{{result.snippet}}</div>
+          </div>
+        {{/if}}
+
+    {{/each}}
+{{/if}}
