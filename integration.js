@@ -166,7 +166,7 @@ function validateOptions(options, callback) {
     errors,
     options,
     "apiKey",
-    "You must provide a valid API URL"
+    "You must provide a valid API Key"
   );
   callback(null, errors);
 }
