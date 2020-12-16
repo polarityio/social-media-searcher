@@ -146,8 +146,33 @@ function handleRestError(error, entity, res, body) {
 
   return result;
 }
+function validateStringOption(errors, options, optionName, errMessage) {
+  if (
+    typeof options[optionName].value !== "string" ||
+    (typeof options[optionName].value === "string" &&
+      options[optionName].value.length === 0)
+  ) {
+    errors.push({
+      key: optionName,
+      message: errMessage,
+    });
+  }
+}
+
+function validateOptions(options, callback) {
+  let errors = [];
+
+  validateStringOption(
+    errors,
+    options,
+    "apiKey",
+    "You must provide a valid API URL"
+  );
+  callback(null, errors);
+}
 
 module.exports = {
-  doLookup: doLookup,
-  startup: startup
+  doLookup,
+  validateOptions,
+  startup
 };
