@@ -23,9 +23,11 @@ module.exports = {
    * @optional
    */
   description:
-    "Social Media Search uses Google Programmable Search to find public social media accounts.",
+    'Social Media Search uses Google Programmable Search to find public social media accounts.',
   entityTypes: ['email'],
-    customTypes:[
+  onDemandOnly: true,
+  defaultColor: 'light-blue',
+  customTypes: [
     {
       key: 'handle',
       regex: /^@?(\w){1,15}$/
