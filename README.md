@@ -2,13 +2,13 @@
 
 The Polarity Social Media Searcher uses the google search API to pass through programmatically search if there are any known social media accounts on any of the following websites.
 
-* facebbok.com
+* facebook.com
 * twitter.com
 * instagram.com
 * tiktok.com
 * reddit.com
 * parler.com
-* Linkedin.com
+* linkedin.com
 
 ### API Key
 
