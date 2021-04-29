@@ -58,7 +58,6 @@ module.exports = {
       file: './templates/summary.hbs'
     }
   },
-  onDemandOnly: true,
   request: {
     // Provide the path to your certFile. Leave an empty string to ignore this option.
     // Relative paths are relative to the integration's root directory
@@ -81,7 +80,6 @@ module.exports = {
   logging: {
     level: 'info' //trace, debug, info, warn, error, fatal
   },
-  onDemandOnly: false,
   /**
    * Options that are displayed to the user/admin in the Polarity integration user-interface.  Should be structured
    * as an array of option objects.
