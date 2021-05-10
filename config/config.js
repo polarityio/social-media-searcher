@@ -30,7 +30,7 @@ module.exports = {
   customTypes: [
     {
       key: 'handle',
-      regex: /^@?(\w){1,15}$/
+      regex: /@(\w){1,16}/
     }
   ],
   /**
