@@ -1,10 +1,10 @@
 {
   "main": "./integration.js",
   "name": "socialmedia-searcher",
-  "version": "3.0.2-beta",
+  "version": "3.0.5-beta",
   "private": true,
   "dependencies": {
     "request": "^2.88.2",
-    "async": "^3.2.0"
+    "async": "^3.2.3"
   }
 }
