@@ -97,6 +97,7 @@ function doLookup(entities, options, cb) {
         lookupResults.push({
           entity: result.entity,
           data: {
+            summary: [],
             details: result.body
           }
         });
