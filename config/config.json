@@ -1,0 +1,75 @@
+{
+  "name": "Social Media Searcher",
+  "acronym": "SOMD",
+  "description": "Social Media Search uses Google Programmable Search to find public social media accounts.",
+  "entityTypes": [
+    "email"
+  ],
+  "onDemandOnly": true,
+  "defaultColor": "light-blue",
+  "customTypes": [
+    {
+      "key": "handle",
+      "regex": "@(\\w){1,16}"
+    }
+  ],
+  "styles": [
+    "./styles/style.less"
+  ],
+  "block": {
+    "component": {
+      "file": "./components/block.js"
+    },
+    "template": {
+      "file": "./templates/block.hbs"
+    }
+  },
+  "summary": {
+    "component": {
+      "file": "./components/summary.js"
+    },
+    "template": {
+      "file": "./templates/summary.hbs"
+    }
+  },
+  "request": {
+    "cert": "",
+    "key": "",
+    "passphrase": "",
+    "ca": "",
+    "proxy": "",
+    "rejectUnauthorized": true
+  },
+  "logging": {
+    "level": "info"
+  },
+  "options": [
+    {
+      "key": "apiKey",
+      "name": "API Key",
+      "description": "Valid Google CSE API Key",
+      "default": "",
+      "type": "password",
+      "userCanEdit": false,
+      "adminOnly": true
+    },
+    {
+      "key": "cx",
+      "name": "Custom Search Engine ID",
+      "description": "Google Custom Search Engine ID",
+      "default": "72cc7a146256306e9",
+      "type": "text",
+      "userCanEdit": false,
+      "adminOnly": true
+    },
+    {
+      "key": "maxResults",
+      "name": "Maximum Number of Results to Return",
+      "description": "Maximum number of search results to return",
+      "default": 5,
+      "type": "number",
+      "userCanEdit": false,
+      "adminOnly": true
+    }
+  ]
+}
