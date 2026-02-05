@@ -1,0 +1,328 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - \"@johndoe\"",
+        "totalResults": "1420",
+        "searchTerms": "\"@johndoe\"",
+        "count": 5,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "72cc7a146256306e9"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - \"@johndoe\"",
+        "totalResults": "1420",
+        "searchTerms": "\"@johndoe\"",
+        "count": 5,
+        "startIndex": 6,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "72cc7a146256306e9"
+      }
+    ]
+  },
+  "context": {
+    "title": "Social Media Search"
+  },
+  "searchInformation": {
+    "searchTime": 0.342156,
+    "formattedSearchTime": "0.34",
+    "totalResults": "1420",
+    "formattedTotalResults": "1,420"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "John Doe (@johndoe) | Twitter",
+      "htmlTitle": "John Doe (<b>@johndoe</b>) | Twitter",
+      "link": "https://twitter.com/johndoe",
+      "displayLink": "twitter.com",
+      "snippet": "The latest tweets from John Doe (@johndoe). Security researcher and threat analyst. San Francisco, CA.",
+      "htmlSnippet": "The latest tweets from John Doe (<b>@johndoe</b>). Security researcher and threat analyst. San Francisco, CA.",
+      "cacheId": "abc123xyz",
+      "formattedUrl": "https://twitter.com/johndoe",
+      "htmlFormattedUrl": "https://twitter.com/<b>johndoe</b>",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://pbs.twimg.com/profile_images/thumbnail.jpg",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "imageobject": [
+          {
+            "contenturl": "https://pbs.twimg.com/profile_images/image.jpg",
+            "width": "400",
+            "caption": "Profile picture"
+          }
+        ],
+        "videoobject": [
+          {
+            "embedurl": "https://twitter.com/video/embed",
+            "playertype": "HTML5 Flash",
+            "width": "435"
+          }
+        ],
+        "creativework": [
+          {
+            "name": "Tweet from John Doe",
+            "text": "Sample tweet content"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://pbs.twimg.com/profile_images/image.jpg",
+            "theme-color": "#ffffff",
+            "og:type": "profile",
+            "og:site_name": "Twitter",
+            "al:ios:app_name": "Twitter",
+            "apple-mobile-web-app-title": "Twitter"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://pbs.twimg.com/profile_images/image.jpg"
+          }
+        ],
+        "person": [
+          {
+            "identifier": "@johndoe",
+            "name": "John Doe",
+            "url": "https://twitter.com/johndoe",
+            "image": "https://pbs.twimg.com/profile_images/image.jpg"
+          },
+          {
+            "identifier": "@johndoe",
+            "name": "John Doe",
+            "url": "https://twitter.com/johndoe",
+            "image": "https://pbs.twimg.com/profile_images/image.jpg"
+          },
+          {
+            "identifier": "@janedoe",
+            "name": "Jane Doe",
+            "url": "https://twitter.com/janedoe",
+            "image": "https://pbs.twimg.com/profile_images/jane.jpg"
+          }
+        ],
+        "socialmediaposting": [
+          {
+            "identifier": "1234567890",
+            "position": "1",
+            "datecreated": "2024-01-15",
+            "datepublished": "2024-01-15",
+            "url": "https://twitter.com/johndoe/status/1234567890",
+            "headline": "Important security update",
+            "articlebody": "We've identified a critical vulnerability affecting...",
+            "commentcount": "45",
+            "author": "John Doe"
+          },
+          {
+            "identifier": "1234567891",
+            "position": "2",
+            "datecreated": "2024-01-14",
+            "datepublished": "2024-01-14",
+            "url": "https://twitter.com/johndoe/status/1234567891",
+            "headline": "Threat intelligence report",
+            "articlebody": "Latest APT group activity detected...",
+            "commentcount": "89",
+            "author": "John Doe"
+          },
+          {
+            "identifier": "1234567892",
+            "position": "3",
+            "datecreated": "2024-01-13",
+            "url": "https://twitter.com/johndoe/status/1234567892",
+            "articlebody": "Investigating malware campaign...",
+            "author": "John Doe"
+          },
+          {
+            "identifier": "1234567893",
+            "position": "4",
+            "datecreated": "2024-01-12",
+            "url": "https://twitter.com/johndoe/status/1234567893",
+            "articlebody": "IOC sharing session tomorrow",
+            "author": "John Doe"
+          },
+          {
+            "identifier": "1234567894",
+            "position": "5",
+            "datecreated": "2024-01-11",
+            "url": "https://twitter.com/johndoe/status/1234567894",
+            "articlebody": "New phishing campaign observed",
+            "author": "John Doe"
+          },
+          {
+            "identifier": "1234567895",
+            "position": "6",
+            "datecreated": "2024-01-10",
+            "url": "https://twitter.com/johndoe/status/1234567895",
+            "articlebody": "Ransomware analysis complete",
+            "author": "John Doe"
+          },
+          {
+            "identifier": "1234567896",
+            "position": "7",
+            "datecreated": "2024-01-09",
+            "url": "https://twitter.com/johndoe/status/1234567896",
+            "articlebody": "Threat actor attribution update",
+            "author": "John Doe"
+          },
+          {
+            "identifier": "1234567897",
+            "position": "8",
+            "datecreated": "2024-01-08",
+            "url": "https://twitter.com/johndoe/status/1234567897",
+            "articlebody": "CVE disclosure coming soon",
+            "author": "John Doe"
+          },
+          {
+            "identifier": "1234567898",
+            "position": "9",
+            "datecreated": "2024-01-07",
+            "url": "https://twitter.com/johndoe/status/1234567898",
+            "articlebody": "Network intrusion analysis",
+            "author": "John Doe"
+          },
+          {
+            "identifier": "1234567899",
+            "position": "10",
+            "datecreated": "2024-01-06",
+            "url": "https://twitter.com/johndoe/status/1234567899",
+            "articlebody": "Malware family identification",
+            "author": "John Doe"
+          },
+          {
+            "identifier": "1234567900",
+            "position": "11",
+            "datecreated": "2024-01-05",
+            "url": "https://twitter.com/johndoe/status/1234567900",
+            "articlebody": "Additional post that should be truncated",
+            "author": "John Doe"
+          },
+          {
+            "identifier": "1234567901",
+            "position": "12",
+            "datecreated": "2024-01-04",
+            "url": "https://twitter.com/johndoe/status/1234567901",
+            "articlebody": "This post exceeds the 10 item limit",
+            "author": "John Doe"
+          }
+        ],
+        "interactioncounter": [
+          {
+            "interactiontype": "https://schema.org/LikeAction",
+            "userinteractioncount": "1234",
+            "url": "https://twitter.com/johndoe/status/1234567890"
+          },
+          {
+            "interactiontype": "https://schema.org/ShareAction",
+            "userinteractioncount": "567",
+            "url": "https://twitter.com/johndoe/status/1234567890"
+          },
+          {
+            "interactiontype": "https://schema.org/CommentAction",
+            "userinteractioncount": "89",
+            "url": "https://twitter.com/johndoe/status/1234567890"
+          },
+          {
+            "interactiontype": "https://schema.org/LikeAction",
+            "userinteractioncount": "0",
+            "url": "https://twitter.com/johndoe/status/1234567891"
+          },
+          {
+            "interactiontype": "https://schema.org/LikeAction",
+            "userinteractioncount": "892",
+            "url": "https://twitter.com/johndoe/status/1234567892"
+          },
+          {
+            "interactiontype": "https://schema.org/LikeAction",
+            "userinteractioncount": "445",
+            "url": "https://twitter.com/johndoe/status/1234567893"
+          },
+          {
+            "interactiontype": "https://schema.org/LikeAction",
+            "userinteractioncount": "332",
+            "url": "https://twitter.com/johndoe/status/1234567894"
+          },
+          {
+            "interactiontype": "https://schema.org/LikeAction",
+            "userinteractioncount": "778",
+            "url": "https://twitter.com/johndoe/status/1234567895"
+          },
+          {
+            "interactiontype": "https://schema.org/LikeAction",
+            "userinteractioncount": "229",
+            "url": "https://twitter.com/johndoe/status/1234567896"
+          },
+          {
+            "interactiontype": "https://schema.org/LikeAction",
+            "userinteractioncount": "556",
+            "url": "https://twitter.com/johndoe/status/1234567897"
+          },
+          {
+            "interactiontype": "https://schema.org/LikeAction",
+            "userinteractioncount": "112",
+            "url": "https://twitter.com/johndoe/status/1234567898"
+          },
+          {
+            "interactiontype": "https://schema.org/LikeAction",
+            "userinteractioncount": "334",
+            "url": "https://twitter.com/johndoe/status/1234567899"
+          },
+          {
+            "interactiontype": "https://schema.org/LikeAction",
+            "userinteractioncount": "998",
+            "url": "https://twitter.com/johndoe/status/1234567900"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "John Doe - Instagram",
+      "htmlTitle": "John Doe - Instagram",
+      "link": "https://instagram.com/johndoe",
+      "displayLink": "instagram.com",
+      "snippet": "Security researcher | Threat intelligence | Malware analysis",
+      "htmlSnippet": "Security researcher | Threat intelligence | Malware analysis",
+      "cacheId": "def456uvw",
+      "formattedUrl": "https://instagram.com/johndoe",
+      "htmlFormattedUrl": "https://instagram.com/<b>johndoe</b>",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://instagram.com/profile_images/thumbnail.jpg",
+            "width": "150",
+            "height": "150"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://instagram.com/profile_images/image.jpg",
+            "og:type": "profile",
+            "og:site_name": "Instagram"
+          }
+        ],
+        "person": [
+          {
+            "identifier": "@johndoe",
+            "name": "John Doe",
+            "url": "https://instagram.com/johndoe"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "root": {
+    "path": "",
+    "on_null": "return_empty"
+  },
+  "pipeline": [
+    {
+      "op": "copy",
+      "from": "items",
+      "to": "reduced_results.items"
+    },
+    {
+      "op": "drop",
+      "paths": [
+        "reduced_results.items[].kind",
+        "reduced_results.items[].htmlTitle",
+        "reduced_results.items[].link",
+        "reduced_results.items[].htmlSnippet",
+        "reduced_results.items[].cacheId",
+        "reduced_results.items[].formattedUrl",
+        "reduced_results.items[].htmlFormattedUrl",
+        "reduced_results.items[].pagemap.cse_thumbnail",
+        "reduced_results.items[].pagemap.imageobject",
+        "reduced_results.items[].pagemap.videoobject",
+        "reduced_results.items[].pagemap.creativework",
+        "reduced_results.items[].pagemap.metatags",
+        "reduced_results.items[].pagemap.cse_image"
+      ]
+    },
+    {
+      "op": "deduplicate_array_objects",
+      "path": "reduced_results.items[].pagemap.person",
+      "by_field": "identifier"
+    },
+    {
+      "op": "drop",
+      "paths": [
+        "reduced_results.items[].pagemap.person[].identifier"
+      ]
+    },
+    {
+      "op": "drop",
+      "paths": [
+        "reduced_results.items[].pagemap.socialmediaposting[].identifier"
+      ]
+    },
+    {
+      "op": "truncate_list",
+      "path": "reduced_results.items[].pagemap.socialmediaposting",
+      "max_size": 10,
+      "shape": {
+        "postCount": "$original_count",
+        "firstTenPosts": "$truncated"
+      }
+    },
+    {
+      "op": "filter_array",
+      "path": "reduced_results.items[].pagemap.interactioncounter",
+      "condition": {
+        "field": "userinteractioncount",
+        "op": ">",
+        "value": 0
+      }
+    },
+    {
+      "op": "truncate_list",
+      "path": "reduced_results.items[].pagemap.interactioncounter",
+      "max_size": 10,
+      "shape": {
+        "interactionCount": "$original_count",
+        "firstTenInteractions": "$truncated"
+      }
+    },
+    {
+      "op": "prune",
+      "strategy": "empty_values",
+      "target": "reduced_results"
+    }
+  ],
+  "output": {
+    "result": "$working.reduced_results"
+  }
+}
